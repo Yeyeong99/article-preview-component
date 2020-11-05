@@ -2,6 +2,7 @@
 ::before,
 ::after {
   box-sizing: border-box;
+  margin: 0px;
 }
 
 html {
@@ -10,12 +11,16 @@ html {
   align-items: center;
   background-color: hsl(210, 46%, 95%);
 }
+
 p {
   margin: 0;
+  line-height: 1.5rem;
+  color: hsl(212, 23%, 69%);
 }
 
 body {
   font-family: Manrope;
+  color: hsl(217, 19%, 35%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,10 +29,11 @@ body {
 }
 
 .container {
+  position: absolute;
   overflow: hidden;
   display: flex;
-  width: 60%;
-  height: 30%;
+  width: 950px;
+  height: 360px;
   background-color: white;
   border-radius: 10px;
 }
@@ -47,10 +53,6 @@ body {
   justify-content: space-between;
 }
 
-h3 {
-  margin: 0px;
-}
-
 .personal-info {
   display: flex;
   justify-content: space-between;
@@ -61,13 +63,66 @@ h3 {
   width: 50px;
   border-radius: 50%;
 }
+
+.name-date {
+  margin-right: 180px;
+}
+
+.name-date > :nth-child(1) {
+  font-weight: 600;
+  color: hsl(214, 17%, 51%);
+}
+.share-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  border-radius: 50%;
+}
+
+.share-icon:hover {
+  color: aliceblue;
+  background-color: hsl(214, 17%, 51%);
+  cursor: pointer;
+}
+
+.share-icon:hover > img {
+  filter: brightness(3);
+}
 .share-box {
+  display: none;
+}
+
+.share-show {
+  width: 250px;
+  position: relative;
+  top: 40px;
+  left: 415px;
+}
+.share-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px;
+  padding: 10px 40px;
   height: 56px;
-  width: 240px;
+  width: 250px;
   border-radius: 10px;
   background-color: hsl(217, 19%, 35%);
+}
+
+.share-content > p {
+  color: aliceblue;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+
+.down-arrow {
+  margin: auto;
+  width: 20px;
+  border-style: solid;
+  border-width: 20px;
+  border-color: hsl(217, 19%, 35%) transparent transparent transparent;
 }
