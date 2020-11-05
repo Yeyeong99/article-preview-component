@@ -1,0 +1,73 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(210, 46%, 95%);
+}
+p {
+  margin: 0;
+}
+
+body {
+  font-family: Manrope;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  height: 100vh;
+}
+
+.container {
+  overflow: hidden;
+  display: flex;
+  width: 60%;
+  height: 30%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.img-box {
+  height: 100%;
+  width: 100%;
+  background-image: url(/images/drawers.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text-box {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h3 {
+  margin: 0px;
+}
+
+.personal-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.personal-info > img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.share-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  height: 56px;
+  width: 240px;
+  border-radius: 10px;
+  background-color: hsl(217, 19%, 35%);
+}
